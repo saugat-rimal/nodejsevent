@@ -1,0 +1,130 @@
+#content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-content1 {
+    display: grid;
+    gap: 0 30px;
+    grid-template-areas:
+        " eventbanner  eventtopic"
+        " eventdescription  smallbanner"
+    ;
+
+    padding: 100px 0;
+
+}
+
+
+.eventbanner {
+    grid-area: eventbanner;
+    max-width: 616px;
+
+}
+
+.eventtopic {
+    grid-area: eventtopic;
+    max-width: 512px;
+
+}
+
+.eventtopicname {
+    font-size: 48px;
+}
+
+.smallbanner {
+    grid-area: smallbanner;
+    max-width: 512px;
+    margin-top: -200px;
+
+}
+
+.eventdescription {
+    grid-area: eventdescription;
+    max-width: 616px;
+    margin-top: 20px;
+    padding: 0 10px;
+
+}
+
+@media screen and (max-width:780px) {
+    #hero-content1 {
+        row-gap: 20px;
+        grid-template-areas:
+            "eventtopic"
+            "eventbanner"
+            "smallbanner"
+            "eventdescription"
+        ;
+
+        padding-top: 50px;
+    }
+
+    .smallbanner {
+        display: none;
+
+    }
+
+    .eventdescription {
+        margin-top: -10px;
+    }
+
+
+    .eventtopicname {
+        padding: 10px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    #hero-content1 {
+        display: grid;
+        gap: 0 50px;
+        grid-template-areas:
+            " eventbanner  eventtopic"
+            " eventdescription  smallbanner"
+        ;
+
+        padding: 100px 0;
+
+    }
+
+    .eventbanner {
+        grid-area: eventbanner;
+        max-width: 716px;
+        height: auto;
+
+    }
+
+    img.bannernode {
+        width: 696px;
+    }
+
+    .eventtopic {
+        grid-area: eventtopic;
+        max-width: 612px;
+
+    }
+
+    .eventtopicname {
+        font-size: 48px;
+    }
+
+    .smallbanner {
+        grid-area: smallbanner;
+        max-width: 612px;
+        margin-top: -200px;
+
+    }
+
+    .eventdescription {
+        grid-area: eventdescription;
+        max-width: 716px;
+        margin-top: 20px;
+        padding: 0 10px;
+
+    }
+}

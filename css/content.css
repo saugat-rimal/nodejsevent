@@ -1,0 +1,79 @@
+#content {
+    padding: 50px 7vw;
+}
+
+#hero-content {
+
+    display: grid;
+    grid-template-areas:
+        "left right"
+    ;
+    height: 500px;
+
+}
+
+.leftcontent {
+    width: 616px;
+    height: 608px;
+
+}
+
+.eventbutton {
+    margin-top: 50px;
+}
+
+.eventbutton .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C4C4C4;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.button.buyticket {
+
+    background: #dd2828;
+    color: white;
+}
+
+.button.buyticket:hover {
+    background: #C4C4C4;
+    color: white;
+}
+
+.learnmore {
+    border: 2px solid #C4C4C4;
+    padding: 13px 18px !important;
+
+}
+
+.learnmore:hover {
+    border: 2px solid #dd2121;
+    color: #dd2121;
+    ;
+    padding: 13px 18px;
+
+}
+
+
+.rightcontent {
+    background-color: yellow;
+}
+
+
+
+@media screen and (max-width:761px) {
+    #content {
+        padding: 50px 7vw;
+    }
+
+    #hero-content {
+
+        display: grid;
+        grid-template-areas:
+            "left"
+            "right"
+        ;
+    }
+}

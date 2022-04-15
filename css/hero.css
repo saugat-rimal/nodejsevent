@@ -1,0 +1,84 @@
+#hero {
+    margin-top: -8vh;
+}
+
+#hero-banner {
+    background: url(/assets/images/hero.png);
+    height: 800px;
+    color: white;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    box-sizing: border-box;
+    background: rgba(212, 212, 212, 0.3);
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    padding: 32px;
+    max-width: 500px;
+    height: 500px;
+}
+
+.eventname {
+    font-size: 53px;
+    line-height: 80px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.eventdate {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    padding: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.eventyear {
+    font-weight: 700;
+    margin-top: 30px;
+    font-size: 120px;
+    line-height: 152px;
+    letter-spacing: 0.4em;
+    text-align: center;
+}
+
+@media screen and (max-width: 581px) {
+    .banner {
+        width: 355px;
+        height: auto;
+    }
+
+    .eventname {
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .eventdate {
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 14px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .eventyear {
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 152px;
+        letter-spacing: 0.28em;
+        text-align: center;
+        margin-top: 0px;
+
+    }
+
+}

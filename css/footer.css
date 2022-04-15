@@ -1,0 +1,10 @@
+#footer {
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 60px 30px 60px;
+}
+
+#footer.saugatinfo {
+    text-align: center;
+    max-width: 800px;
+}

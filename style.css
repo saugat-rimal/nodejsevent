@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Euclid Circular A';
+
+}
+
+body {
+    height: 190vh;
+
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "content"
+        "footer"
+    ;
+}
+
+#header {
+    grid-area: header;
+}
+
+#hero {
+    grid-area: hero;
+}
+
+#content {
+    grid-area: content;
+}
+
+#footer {
+    grid-area: footer;
+}
